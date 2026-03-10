@@ -1,0 +1,16 @@
+.fixed-hero-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    pointer-events: auto;
+    /* Allow dragging if OrbitControls is ever added, though currently none */
+}
+
+/* Ensure the app container takes up full height to allow scrolling if needed later */
+.app-container {
+    min-height: 100vh;
+    position: relative;
+}
