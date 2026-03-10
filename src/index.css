@@ -7,9 +7,7 @@
   --color-surface-glass: rgba(30, 30, 30, 0.6);
   --color-border: rgba(255, 255, 255, 0.1);
 
-  /* Brand colors matching Naya Express */
   --color-brand: #f06a1e;
-  /* Based on the orange tone typically used for such AI/logistics brands */
   --color-brand-glow: rgba(240, 106, 30, 0.4);
   --color-accent: #f5894b;
 
@@ -38,7 +36,6 @@ body {
   line-height: 1.6;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 h1,
@@ -71,7 +68,6 @@ button {
   outline: none;
 }
 
-/* Base Utility Classes */
 .container {
   width: 100%;
   max-width: 1200px;
@@ -86,7 +82,7 @@ button {
 }
 
 .text-gradient {
-  background: linear-gradient(135deg, #ffffff 0%, #a0a0a0 100%);
+  background: linear-gradient(135deg, #fff 0%, #a0a0a0 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -137,18 +133,15 @@ button {
   background-color: rgba(255, 255, 255, 0.05);
 }
 
-/* Animations that are purely CSS (we use GSAP for complex ones) */
 @keyframes float {
-  0% {
+
+  0%,
+  100% {
     transform: translateY(0px);
   }
 
   50% {
     transform: translateY(-10px);
-  }
-
-  100% {
-    transform: translateY(0px);
   }
 }
 
@@ -156,7 +149,7 @@ button {
   animation: float 6s ease-in-out infinite;
 }
 
-/* Custom Webkit Scrollbar */
+/* scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }
